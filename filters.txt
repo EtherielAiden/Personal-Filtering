@@ -1,0 +1,440 @@
+! Hide all videos containing the phrase "#shorts"
+youtube.com##ytd-grid-video-renderer:has(#video-title:has-text(#shorts))
+youtube.com##ytd-grid-video-renderer:has(#video-title:has-text(#Shorts))
+youtube.com##ytd-grid-video-renderer:has(#video-title:has-text(#short))
+youtube.com##ytd-grid-video-renderer:has(#video-title:has-text(#Short))
+
+! Hide all videos with the shorts indicator on the thumbnail
+youtube.com##ytd-grid-video-renderer:has([overlay-style="SHORTS"])
+youtube.com##ytd-rich-item-renderer:has([overlay-style="SHORTS"])
+youtube.com##ytd-video-renderer:has([overlay-style="SHORTS"])
+youtube.com##ytd-item-section-renderer.ytd-section-list-renderer[page-subtype="subscriptions"]:has(ytd-video-renderer:has([overlay-style="SHORTS"]))
+
+! Hide shorts button in sidebar
+youtube.com##ytd-guide-entry-renderer:has-text(Shorts)
+youtube.com##ytd-mini-guide-entry-renderer:has-text(Shorts)
+
+! Hide shorts section on homepage
+youtube.com##ytd-rich-section-renderer:has(#rich-shelf-header:has-text(Shorts))
+youtube.com##ytd-reel-shelf-renderer:has(.ytd-reel-shelf-renderer:has-text(Shorts))
+
+! Hide shorts tab on channel pages
+! Old style
+youtube.com##tp-yt-paper-tab:has(.tp-yt-paper-tab:has-text(Shorts))
+! New style (2023-10)
+youtube.com##yt-tab-shape:has-text(/^Shorts$/)
+
+! Hide shorts in video descriptions
+youtube.com##ytd-reel-shelf-renderer.ytd-structured-description-content-renderer:has-text("Shorts remixing this video")
+
+! Remove empty spaces in grid
+youtube.com##ytd-rich-grid-row,#contents.ytd-rich-grid-row:style(display: contents !important)
+
+! Aug 12, 2024 https://www.youtube.com
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
+www.youtube.com###guide-links-primary
+www.youtube.com###guide-links-secondary
+
+! Aug 13, 2024 https://music.youtube.com
+music.youtube.com##ytmusic-guide-entry-renderer.ytmusic-guide-section-renderer.style-scope:nth-of-type(4) > .ytmusic-guide-entry-renderer.style-scope
+
+! Aug 20, 2024 https://zerokaito.blogspot.com
+||www.blogger.com/followers.g?blogID=1169440689267119916&colors=Cgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByM3NTc1NzUiByNGRjMxNTIqEHJnYmEoMjksMjksMjksMCkyByMwMDAwMDA6ByM3NTc1NzVCByNGRjMxNTJKByMwMDAwMDBSByNGRkZGRkZaC3RyYW5zcGFyZW50&pageSize=21&origin=https://zerokaito.blogspot.com/&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.pGGAptgAK4s.O%2Fam%3DAAAg%2Fd%3D1%2Frs%3DAHpOoo-Cic-4VdRMZ7mFCYOA3wzpF7O-6g%2Fm%3D__features__$subdocument
+zerokaito.blogspot.com##.PopularPosts.widget
+||www.blogger.com/followers.g?blogID=1169440689267119916&colors=Cgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByM3NTc1NzUiByNGRjMxNTIqEHJnYmEoMjksMjksMjksMCkyByMwMDAwMDA6ByM3NTc1NzVCByNGRjMxNTJKByMwMDAwMDBSByNGRkZGRkZaC3RyYW5zcGFyZW50&pageSize=21&origin=https://zerokaito.blogspot.com/&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.pGGAptgAK4s.O%2Fam%3DAAAg%2Fd%3D1%2Frs%3DAHpOoo-Cic-4VdRMZ7mFCYOA3wzpF7O-6g%2Fm%3D__features__$subdocument
+zerokaito.blogspot.com##.section.colorify-pro-widget-ready.sidebar
+
+! Sep 7, 2024 https://www.ryuugames.com
+www.ryuugames.com##.menu-item-42244.td-normal-menu.td-menu-item.menu-item-object-custom.menu-item-type-custom.menu-item
+www.ryuugames.com##.menu-item-64563.td-normal-menu.td-menu-item.menu-item-object-custom.menu-item-type-custom.menu-item > [href="https://theporndude.com/"]
+
+! Sep 10, 2024 https://cloutgist.com
+cloutgist.com###content > div
+
+! Sep 11, 2024 https://www.ryuugames.com
+www.ryuugames.com##.menu-item-42245.td-normal-menu.td-menu-item.menu-item-object-custom.menu-item-type-custom.menu-item > [href^="https://wife.app/create-personality"]
+
+! Oct 21, 2024 https://www.youtube.com
+www.youtube.com##.undefined > yt-button-shape
+www.youtube.com###voice-search-button > .ytd-masthead.style-scope > yt-button-shape
+www.youtube.com##.style-default.ytd-masthead.style-scope > .ytd-topbar-menu-button-renderer.style-scope
+www.youtube.com###icon > .yt-icon-button.style-scope
+
+! Oct 22, 2024 https://warungpintar.co.id
+warungpintar.co.id##.banner-top.banner > span
+
+! Oct 22, 2024 https://www.kompas.com
+www.kompas.com##.col-bs10-3
+www.kompas.com##.clearfix.container > .gate-kgplus
+www.kompas.com##.clearfix.kcm__horizontal.kcm
+www.kompas.com##.photoCarousel-slider.photoCarousel-wrap
+www.kompas.com##.photoCarousel
+www.kompas.com##.clearfix.kcm__tower.kcm
+
+! Oct 22, 2024 https://properti.kompas.com
+properti.kompas.com##.col-bs10-3
+
+! Oct 22, 2024 https://www.kompas.com
+www.kompas.com##p:nth-of-type(40)
+
+! Oct 27, 2024 https://www.youtube.com
+www.youtube.com##.ytd-metadata-row-container-renderer.style-scope > .ytd-rich-metadata-row-renderer.style-scope
+
+! Oct 29, 2024 https://www.ryuugames.com
+www.ryuugames.com##.td-header-header.td-header-row.td-container-header
+
+! Nov 5, 2024 https://web.whatsapp.com
+web.whatsapp.com##.x1anpbxc.x1kyludp > ._ajvb._ajv7 > .xurb0ha.xwib8y2.x1sxyh0.x1y1aw1k._ajv6
+
+! Dec 5, 2024 https://www.youtube.com
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-section-renderer.style-scope:nth-of-type(4)
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-section-renderer.style-scope:nth-of-type(2)
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-section-renderer.style-scope:nth-of-type(3)
+
+! Dec 6, 2024 https://www.ryuugames.com
+www.ryuugames.com##.top.wpfront-fixed.wpfront-notification-bar
+
+! Dec 9, 2024 https://www.ryuugames.com
+www.ryuugames.com##.widget_media_image.widget_block.block-34.widget.td_block_template_5
+
+! Dec 12, 2024 https://www.youtube.com
+www.youtube.com##.ytd-notification-topbar-button-renderer.style-scope
+
+! Dec 17, 2024 https://www.ryuugames.com
+www.ryuugames.com##.td_block_template_5.tdi_9.td-a-rec-id-footer_top.td-a-rec
+
+! Dec 24, 2024 https://www.ryuugames.com
+www.ryuugames.com##.menu-item-42245.td-normal-menu.td-menu-item.menu-item-object-custom.menu-item-type-custom.menu-item
+
+! Jan 2, 2025 https://www.ryuugames.com
+www.ryuugames.com##.td_block_template_5.tdi_3.td-a-rec-id-footer_top.td-a-rec
+
+! Jan 5, 2025 https://vndb.org
+||t.vndb.org/s/tsukihime-right.jpg$image
+||t.vndb.org/s/tsukihime-right.jpg$image
+
+! Jan 10, 2025 https://www.youtube.com
+www.youtube.com###content > .ytd-rich-item-renderer.style-scope.shortsLockupViewModelHost
+www.youtube.com###content > .ytd-rich-item-renderer.style-scope.shortsLockupViewModelHost
+
+! Jan 17, 2025 https://www.ryuugames.com
+www.ryuugames.com##.td_block_template_5.td-pb-border-top.td-single-image-.tdi_41.vc_single_image.td-animation-stack.td_block_wrap.td_block_single_image.wpb_wrapper
+www.ryuugames.com##.td_block_template_5.tdi_44.td-a-rec-id-footer_top.td-a-rec > [href^="https://aichattings.com/"]
+
+! Jan 30, 2025 https://musicbrainz.org
+musicbrainz.org##.nagpanel
+
+! Feb 3, 2025 https://intelegain-technologies.medium.com
+intelegain-technologies.medium.com##.tx.tw.tv.m
+
+! Feb 6, 2025 https://music.youtube.com
+music.youtube.com###side-panel
+
+! Feb 15, 2025 https://www.youtube.com
+www.youtube.com###chat-container
+
+! Feb 15, 2025 https://www.ryuugames.com
+www.ryuugames.com##.td-post-sharing-top
+
+! Feb 28, 2025 https://archive.org
+archive.org##.formdesign-form.chevron-color-\#F9BF3B.chevron-image-white.background-default.template-chevron.js-donate-banner.row
+
+! Mar 11, 2025 https://www.youtube.com
+www.youtube.com###content > .ytd-rich-section-renderer.style-scope
+
+! Mar 13, 2025 https://mangadex.org
+mangadex.org##.glow.frosted.primary.overflow-hidden.px-3.items-center.flex.md-btn.relative.custom-opacity.rounded.drop-shadow.rounded-lg.md\:flex-grow
+mangadex.org##.px-6.group.pt-3.flex-col.flex
+
+! Apr 13, 2025 https://wuxiaworld.eu
+wuxiaworld.eu##.mantine-1r9ygf5.mantine-Container-root
+
+! Apr 21, 2025 https://www.twitch.tv
+www.twitch.tv##.chat-room__content.fhQiFC.Layout-sc-1xcs6mc-0 > div.Layout-sc-1xcs6mc-0 > .DGdsv.Layout-sc-1xcs6mc-0
+www.twitch.tv##.side-nav--collapsed.side-nav.ceLdPR.Layout-sc-1xcs6mc-0
+www.twitch.tv##.grllUE.Layout-sc-1xcs6mc-0 > div
+
+! Apr 28, 2025 https://www.youtube.com
+www.youtube.com###script_outer_box
+
+! May 1, 2025 https://www.youtube.com
+www.youtube.com###buttons > ytd-button-renderer.ytd-masthead.style-scope
+
+! May 18, 2025 https://www.ryuugames.com
+www.ryuugames.com##.widget_media_image.widget_block.block-39.widget.td_block_template_5
+
+! May 19, 2025 https://cloutgist.com
+cloutgist.com##div:nth-of-type(3)
+cloutgist.com###content > h2
+
+! May 19, 2025 https://jnovels.com
+jnovels.com##.bg-image.bg-dark.small-padding.section.header > [href="https://jnovels.com/"]
+jnovels.com##.bg-image.bg-dark.small-padding.section.header
+jnovels.com###block-8
+jnovels.com##.widget_text.widget_block.widget
+jnovels.com###block-7
+jnovels.com##.code-block-1.code-block
+jnovels.com##p:nth-of-type(5)
+jnovels.com##.clear.post-content > p:nth-of-type(2)
+jnovels.com##.jp-relatedposts
+jnovels.com##.clear.post-meta-container
+jnovels.com##.comment-respond
+jnovels.com##.sd-sharing-enabled.sharedaddy
+jnovels.com##.jetpack-likes-widget-unloaded.jetpack-likes-widget-wrapper.sd-like.sd-block.sharedaddy
+jnovels.com##.fright.sidebar
+
+! May 20, 2025 https://www.terabox.com
+! www.terabox.com##.u-carousel--horizontal.u-carousel.notification-wrap
+www.terabox.com##.ai-icon.switch-icon
+www.terabox.com##.membership-entry-new
+
+! May 22, 2025 https://www.ryuugames.com
+www.ryuugames.com##.menu-item-94876.td-normal-menu.td-menu-item.menu-item-object-custom.menu-item-type-custom.menu-item
+
+! May 23, 2025 https://theblissempire.com
+theblissempire.com##div:nth-of-type(3)
+theblissempire.com##form > div
+theblissempire.com##.text-center.paras-dev-top
+
+! May 25, 2025 https://dragoisekai.blogspot.com
+dragoisekai.blogspot.com###unblocker
+
+! Jun 10, 2025 https://kaoritranslation.blogspot.com
+kaoritranslation.blogspot.com###billboard
+kaoritranslation.blogspot.com##aside
+kaoritranslation.blogspot.com##.swiped.swipe-up.footer
+kaoritranslation.blogspot.com##.f.s.tx-75.bg-100.post-action
+
+! Jun 14, 2025 https://www.youtube.com
+www.youtube.com###teaser-carousel
+youtube.com###cinematics.ytd-watch-flexy{display:none}
+
+! Aug 1, 2025 https://www.crazygames.com
+www.crazygames.com##.GameInfo_leaderboard__rgrmE.GameInfo_roundedCornersContainer__D5D_p
+
+! Aug 1, 2025 https://www.terabox.com
+www.terabox.com##.operate-top-notice
+!www.terabox.com##.component-header-index
+
+! Aug 4, 2025 https://nhentai.net
+nhentai.net##section.reader-bar:nth-of-type(4)
+
+! Aug 13, 2025 https://support.hp.com
+support.hp.com###driversPageMastiffBannerTop
+
+! Sep 26, 2025 https://bimasatriagaruda.fandom.com
+bimasatriagaruda.fandom.com###global-explore-navigation
+
+! Sep 28, 2025 https://neettranslation2.blogspot.com
+neettranslation2.blogspot.com###ignielAdBlock
+
+! Oct 2, 2025 https://mangadex.org
+mangadex.org##.z-20.drop-shadow.justify-center.flex.mb-6.bottom-0.right-0.left-0.fixed
+
+! Oct 5, 2025 https://mangadex.org
+mangadex.org##.mb-2.sm\:mt-0.mt-4 > .justify-center.items-center.flex
+
+! Oct 9, 2025 https://eushully.fandom.com
+eushully.fandom.com##.global-explore-navigation
+
+! Oct 20, 2025 https://www.ryuugames.com
+www.ryuugames.com##.menu-item-116333.td-normal-menu.td-menu-item.menu-item-object-custom.menu-item-type-custom.menu-item
+www.ryuugames.com##.menu-item-114290.td-normal-menu.td-menu-item.menu-item-object-custom.menu-item-type-custom.menu-item
+www.ryuugames.com##.menu-item-105860.td-normal-menu.td-menu-item.menu-item-object-custom.menu-item-type-custom.menu-item
+www.ryuugames.com##.menu-item-87114.td-normal-menu.td-menu-item.menu-item-first.menu-item-object-custom.menu-item-type-custom.menu-item
+
+! Oct 20, 2025 https://duniagames.co.id
+duniagames.co.id##.cdk-overlay-container
+
+! Oct 21, 2025 https://vndb.org
+vndb.org###support
+
+! Nov 16, 2025 https://www.ryuugames.com
+www.ryuugames.com##.menu-item-118479.td-normal-menu.td-menu-item.menu-item-object-custom.menu-item-type-custom.menu-item
+
+! Nov 21, 2025 https://zh.moegirl.org.cn
+zh.moegirl.org.cn##.-WH4kRaZFv_e7nopu > [href^="https://www.gamecity.com.tw/zero/crimson-re/tch/index.html#producttop"]
+zh.moegirl.org.cn##.xUkJeF1d7d_e7nopu
+zh.moegirl.org.cn##.-WH4kRaZFv_eirw69 > [href^="https://www.gamecity.com.tw/zero/crimson-re/tch/index.html#producttop"]
+
+! Nov 23, 2025 https://www.facebook.com
+www.facebook.com##.xzkaem6.x1n2onr6.__fb-light-mode
+
+! Nov 30, 2025 https://mangadex.org
+mangadex.org##.space-y-8.sm\:\!-mt-8.\!-mt-16.wide.page-container > .mt-4
+mangadex.org##.wide.page-container > div > div > .justify-center.items-center.flex
+
+! Dec 27, 2025 https://nhentai.net
+nhentai.net##li.desktop:nth-of-type(8)
+nhentai.net##li.desktop:nth-of-type(9)
+
+! Jan 12, 2026 https://mangadex.org
+mangadex.org##.\!mt-6
+mangadex.org###our-dream-ai
+
+! Feb 6, 2026 https://www.youtube.com
+www.youtube.com###copyright
+
+! Feb 9, 2026 https://www.canva.com
+www.canva.com##.Es0S6w
+
+! Feb 13, 2026 https://new-fik.upnvj.ac.id
+new-fik.upnvj.ac.id##.navbar-menu > .menu-main-menu-container
+
+! Feb 17, 2026 https://www.youtube.com
+www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
+
+! Mar 10, 2026 https://kishuku-gakkou-no-juliet.fandom.com
+kishuku-gakkou-no-juliet.fandom.com##.page__right-rail
+kishuku-gakkou-no-juliet.fandom.com###global-explore-navigation
+kishuku-gakkou-no-juliet.fandom.com##.global-top-navigation__action-wrapper
+
+! Mar 10, 2026 https://gemini.google.com
+gemini.google.com##.right-section
+
+! Apr 1, 2026 https://www.miruro.tv
+www.miruro.tv##.a-ads.animFadeIn._promoBanner_1v64l_1
+
+! Apr 2, 2026 https://mono.squid.wtf
+mono.squid.wtf##.visible.fullscreen-ui-toggle
+mono.squid.wtf###fullscreen-next-track
+mono.squid.wtf###fs-cast-btn
+mono.squid.wtf###fs-add-playlist-btn
+
+! Apr 3, 2026 https://jnovels.com
+jnovels.com##.comments-area
+jnovels.com##.clear.post-content > .has-border-color.wp-block-group
+
+! Apr 3, 2026 https://kaoritranslation.blogspot.com
+kaoritranslation.blogspot.com##.f.fi.ablock
+
+! Apr 5, 2026 https://mangadex.org
+mangadex.org##.flex-col.flex.my-2.p-2.bg-accent
+
+! Apr 7, 2026 https://www.brainacademy.id
+www.brainacademy.id##.sticky.col-md-4
+www.brainacademy.id##.banner-product-wrapper
+www.brainacademy.id##.bantuan-bottom.bantuan-element
+
+! Apr 9, 2026 https://sazwe.com
+sazwe.com##center > [href="https://app.adjust.com/12fvdquu"]
+
+! Apr 26, 2026 https://support.microsoft.com
+support.microsoft.com###supArticleContent > div.ocpArticleContent
+support.microsoft.com###c-uhf-nav-cta
+
+! May 2, 2026 https://animekai.to
+animekai.to###anime-rating
+animekai.to##.alert.alert-dismissible.show
+animekai.to##.social-share-watch
+animekai.to###player-control
+
+! May 20, 2026 https://www.ryuugames.com
+www.ryuugames.com##.menu-item-130814.td-normal-menu.td-menu-item.menu-item-object-custom.menu-item-type-custom.menu-item
+
+! Jun 3, 2026 https://www.curseforge.com
+www.curseforge.com##.cookiebar
+
+! Jun 10, 2026 https://www.ryuugames.com
+www.ryuugames.com##.ryuu-sl-vip-banner
+
+! Jun 14, 2026 https://www.fontmagic.com
+www.fontmagic.com##.is-visible.fm-cookie-bar
+
+! Jun 14, 2026 https://www.youtube.com
+www.youtube.com###movie_player > .ytp-overlays-container > .ytp-overlay-bottom-right
+
+! Jun 15, 2026 https://www.last.fm
+www.last.fm##.hidden-xs.your-progress-component.buffer-standard
+
+! Jun 18, 2026 https://www.ryuugames.com
+www.ryuugames.com##.right-content
+www.ryuugames.com##.faq-section
+www.ryuugames.com##.vip-section-header
+www.ryuugames.com###ryuu-sl-ad-banner-2
+www.ryuugames.com###ryuu-sl-ad-button-1
+www.ryuugames.com###ryuu-sl-ad-button-2
+
+! Jun 24, 2026 https://www.last.fm
+www.last.fm##.subscribe-cta
+
+! Jun 27, 2026 https://jnovels.com
+jnovels.com##.code-block-4.code-block
+
+! Jul 22, 2026 https://web.whatsapp.com
+web.whatsapp.com##.x14ug900.x1afcbsf.x6s0dn4.x78zum5.x1s70e7g > .x1qrby5j.x7ja8zs.x1t2pt76.x1lytzrv.xedcshv.xarpa2k.x3igimt.x12ejxvf.xaigb6o.x1beo9mf.xv2umb2.x1jfb8zj.x1h9r5lt.x1h91t0o.x4k7w5x.x1vvkbs.x16tdsg8.x1hl2dhg.x1c1uobl.x18d9i69.xyri2b.xexx8yu.x1lziwak.xat24cr.x14z9mp.xdj266r.html-span
+web.whatsapp.com##.x10wlt62.x6ikm8r.x2lwn1j.xeuugli.xfex06f.x2lah0s.xozqiw3.x1q0g3np.x78zum5.x1280gxy.x2vl965.x106a9eq.x10b6aqq.x1iorvi4
+
+! Aug 14, 2026 https://chatgpt.com
+chatgpt.com##.lg\:block.rounded-lg.hidden.translucent-surface
+
+! Aug 20, 2026 https://www.terabox.com
+||www.terabox.com/wap/ai/agent$subdocument
+||www.terabox.com/wap/ai/agent$subdocument
+
+! Aug 22, 2026 https://f95zone.to
+f95zone.to##.message-signature
+
+! Aug 23, 2026 https://www.youtube.com
+www.youtube.com##.you-chat-entrypoint-button.ytd-menu-renderer.style-scope.ytSpecButtonViewModelHost
+
+! Aug 23, 2026 https://chatgpt.com
+chatgpt.com##.text-token-icon-accent.font-medium.text-sm.rounded-full.gap-1.items-center.inline-flex
+
+! Aug 25, 2026 https://cyber-junkie.com
+cyber-junkie.com##.idmuvi-topbanner
+cyber-junkie.com##.idmuvi-topbanner-aftermenu
+
+! Sep 6, 2026 https://open.spotify.com
+open.spotify.com##.itzKVxWhS4n59fp_KIVc
+open.spotify.com###Desktop_LeftSidebar_Id
+
+! Sep 6, 2026 https://spotidownloader.com
+spotidownloader.com##.my-4
+spotidownloader.com##section:nth-of-type(1)
+spotidownloader.com##.mt-6
+spotidownloader.com##.mt-12
+spotidownloader.com##.z-50.justify-center.items-center.flex.bg-opacity-70.bg-black.inset-0.fixed
+
+! Sep 8, 2026 https://seirei-gensouki.fandom.com
+seirei-gensouki.fandom.com##.page__right-rail
+seirei-gensouki.fandom.com##.global-footer
+seirei-gensouki.fandom.com##table:nth-of-type(8)
+seirei-gensouki.fandom.com##table:nth-of-type(7)
+seirei-gensouki.fandom.com##.page-footer
+seirei-gensouki.fandom.com###p-views
+
+! Sep 13, 2026 https://jnovels.com
+jnovels.com##div.fade-in.post-loaded.post-container:nth-of-type(2)
+jnovels.com##div.fade-in.post-loaded.post-container:nth-of-type(3)
+jnovels.com##.code-block-2.code-block
+
+! Oct 7, 2026 https://otonari-no-tenshi.fandom.com
+otonari-no-tenshi.fandom.com##.global-explore-navigation
+otonari-no-tenshi.fandom.com##.global-top-navigation__action-wrapper
+otonari-no-tenshi.fandom.com##.page__right-rail
+otonari-no-tenshi.fandom.com###community-navigation > .register.global-action__item
+otonari-no-tenshi.fandom.com###community-navigation > .sign-in.global-action__item
+otonari-no-tenshi.fandom.com###community-navigation > .fandom-community-header__local-navigation > .wds-tabs > .explore-menu.wds-dropdown
+otonari-no-tenshi.fandom.com##.page-footer
+otonari-no-tenshi.fandom.com##.global-footer
+
+! Oct 11, 2026 https://chatgpt.com
+chatgpt.com##div.no-drag.items-center.shrink-0.flex.pointer-events-auto > .select-none.gap-1.items-center.flex
+
+! Oct 11, 2026 https://www.youtube.com
+www.youtube.com###sponsor-button
+
+! Oct 15, 2026 https://www.tokopedia.com
+www.tokopedia.com##.e1t9gu7z2.css-1e3amw5
+
+! Oct 20, 2026 https://www.miruro.tv
+www.miruro.tv##._stack_1naw0_1
+
+! Oct 24, 2026 https://calendar.google.com
+calendar.google.com##.nn5oJc
+
+! Oct 28, 2026 https://chatgpt.com
+chatgpt.com##.px-2.mb-3\.5.mt-1.col-span-full
+
