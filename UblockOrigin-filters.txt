@@ -438,3 +438,7 @@ calendar.google.com##.nn5oJc
 ! Oct 28, 2026 https://chatgpt.com
 chatgpt.com##.px-2.mb-3\.5.mt-1.col-span-full
 
+! Nov 4, 2026 https://www.ryuugames.com
+www.ryuugames.com##.menu-item-159929.td-normal-menu.td-menu-item.menu-item-object-custom.menu-item-type-custom.menu-item
+www.ryuugames.com##.menu-item-159929.td-normal-menu.td-menu-item.menu-item-object-custom.menu-item-type-custom.menu-item > [href^="https://animeapp.org/"]
+www.ryuugames.com###menu-item-159929 > [href^="https://animeapp.org/"]
